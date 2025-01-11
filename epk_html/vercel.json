@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/artist-press-kit", "destination": "/artist-press-kit.html" },
+    { "source": "/bhole_shankar", "destination": "/bhole_shankar.html" }
+  ]
+}
