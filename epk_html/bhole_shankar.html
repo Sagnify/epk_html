@@ -92,17 +92,7 @@
                 <div class="flex-1 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
                     <h3 class="text-2xl font-semibold text-white">About the Song</h3>
                     <div class="mt-4 space-y-2">
-                        Song Title: Bhole Shankar
-                        Artist: Kashmira Chakraborty
-                        Lyricist: Sujan Metia
-                        Composer & Producer: Sagnify
-                        Genre: Devotional, Indian Fusion
-                        Language: Hindi
-                        Mood: Energetic, Uplifting, Spiritual
-                        Tempo: Medium-Fast
-                        
-                        Song Description:
-                        "Bhole Shankar" is a soul-stirring devotional track that pays homage to the power and grace of Lord Shiva. With heartfelt Hindi lyrics by Sujan Metia and a captivating composition and dynamic production by Sagnify, the song seamlessly blends traditional devotional essence with contemporary rhythms. The energetic beats, melodious arrangements, and passionate vocals of Kashmira Chakraborty evoke devotion, strength, and a profound spiritual connection. Ideal for meditation, prayer gatherings, and festive occasions like Shivratri, "Bhole Shankar" offers a powerful and uplifting musical experience that resonates deeply with the spirit of Mahadev.
+                       <p><strong>"Bhole Shankar"</strong> is a soulful devotional track that pays tribute to Lord Shiva. Written by <strong>Sujan Metia</strong> and composed and produced by <strong>Sagnify</strong>, the song blends heartfelt Hindi lyrics with powerful rhythms and modern arrangements. Featuring dynamic beats and captivating vocals by <strong>Kashmira Chakraborty</strong>, the song evokes energy, devotion, and spiritual reverence. Ideal for meditation, prayer gatherings, and festivals like Shivratri, <strong>"Bhole Shankar"</strong> delivers a profound and uplifting listening experience.</p>
                     </div>
 <!--                     <a href="https://link.to/song" target="_blank" class="text-blue-400 hover:underline mt-4 inline-block">Listen to "Song Title"</a> -->
                 </div>
@@ -194,10 +184,10 @@
             // Function to update the displayed lyrics
             const updateLyricsDisplay = () => {
                 if (isExpanded) {
-                    lyricsElement.innerText = fullLyrics; // Show full lyrics
+                    lyricsElement.innerHTML = fullLyrics; // Show full lyrics
                     toggleButton.textContent = "Show Less";
                 } else {
-                    lyricsElement.innerText = lyricsArray.slice(0, initialLines).join("\n"); // Show first few lines
+                    lyricsElement.innerHTML = lyricsArray.slice(0, initialLines).join("\n"); // Show first few lines
                     toggleButton.textContent = "Show More";
                 }
             };
