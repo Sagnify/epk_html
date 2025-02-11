@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kya Kare- Sagnify</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gray-800 shadow-lg bg-gradient-to-t from-black via-transparent to-transparent">
+        <div class="container mx-auto py-4 px-4">
+            <h1 class="text-4xl font-bold text-center ">
+                <div id="header-container" class="relative flex flex-col md:flex-row fade-in h-full md:h-screen ">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0">
+                        <img src="https://i.ibb.co/q3NX0L74/Kya-kare.png" 
+                             alt="Background" 
+                             class="w-full h-full object-cover filter blur-xl opacity-60">
+                    </div>
+                
+                    <!-- Left Side: Profile Image (Full Width on Mobile, Half Width on Desktop) -->
+                    <div class="w-full md:w-1/2 flex items-center justify-center p-6 z-10">
+                        <img id="artist-image" src="https://i.ibb.co/q3NX0L74/Kya-kare.png" alt="Song Name" 
+                            class="w-4/5 h-auto object-cover rounded-lg">
+                    </div>
+                
+                    <!-- Right Side: Artist Info -->
+                    <div class="w-full md:w-1/2 flex flex-col justify-center text-white p-8 relative z-10">
+                        <!-- Artist Name -->
+                        <h1 class="text-4xl md:text-6xl font-bold uppercase mb-6 text-left tracking-wide">Kya Kare</h1>
+                
+                
+                        <!-- Artist Bio -->
+                        <p class="text-xl md:text-2xl italic text-left leading-relaxed mb-6">
+                            "Kya Kare" is a heartfelt indie track that captures the struggle of unspoken emotions and longing.
+                        </p>
+                    </div>
+                
+                    <!-- Overlay Dark Fade Effect (Positioned at the bottom) -->
+                    <!-- <div class="absolute bottom-0 right-0 w-screen h-1/3 bg-gradient-to-t from-black via-transparent to-transparent"></div> -->
+                
+                
+                
+                    <!-- Floating Down Arrow Button -->
+                    <div id="scroll-button" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7 7 7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                
+                <script>
+                    // Scroll down when the down arrow is clicked
+                    document.getElementById('scroll-button').addEventListener('click', function() {
+                        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+                    });
+                </script>
+            </h1>
+        </div>
+    </header>
+    <main class="container mx-auto py-6 px-4">
+    
+
+        <section class="fade-in mt-12">
+            <div class="flex flex-col md:flex-row gap-6 mt-8 md:px-20">
+                <!-- Song Details Section (Left - Flexible Height) -->
+                <div class="flex-1 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white">About the Song</h3>
+                    <div class="mt-4 space-y-2">
+                       <p><strong>"Kya Kare"</strong> is an emotionally driven indie track that delves into the complexities of unspoken feelings and longing. With heartfelt lyrics and a soul-stirring melody, the song captures the essence of inner conflict, love, and the unanswered questions that linger in the heart. Blending raw emotions with a soothing yet melancholic sound, Kya Kare resonates with anyone who has ever struggled to express what truly lies within.</p>
+                    </div>
+<!--                     <a href="https://link.to/song" target="_blank" class="text-blue-400 hover:underline mt-4 inline-block">Listen to "Song Title"</a> -->
+                </div>
+        
+                <!-- Music Video Section (Right - Fixed Height) -->
+                <div class="md:w-96">
+                    <div class="h-[500px] w-full flex flex-col bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-6">Listen Before Release!</h3>
+                        <div class="flex-1 overflow-hidden rounded-lg">
+           <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2006877903%3Fsecret_token%3Ds-WYf5tFONfT1&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://soundcloud.com/sagnify22" target="_blank" class="text-white font-semibold text-lg block truncate">
+                                Sagnify
+                            </a>
+                            <a href="https://soundcloud.com/sagnify22/kya-kare/s-cU6bLKVXHCs?si=52efecf41f6e4e05809634bf7f8a357d" target="_blank" class="text-gray-400 text-sm">
+                                "Kya Kare" by Sagnify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section class="fade-in mt-12 px-6 md:px-20">
+            <h2 class="text-3xl font-semibold text-center text-gray-300 mb-6">Song Lyrics</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-gray-300">
+                <p id="lyrics" class="leading-relaxed"></p>
+                <button id="toggle-lyrics" class="mt-4 text-blue-400 hover:underline focus:outline-none">
+                    Show More
+                </button>
+            </div>
+        </section>
+        
+        <script>
+            // Full lyrics text
+            const fullLyrics = `
+  <p><strong>Verse 1</strong></p>
+  <p>
+    Dur hum, hain khade, kya kare?<br>
+    Na pata, kya hua, hain hume?<br>
+    Na mile, tum mujhe... kahi pe…<br>
+    Bhaaagte ho, tum mujhse kyu?
+  </p>
+
+  <p><strong>Pre-Chorus</strong></p>
+  <p>
+    Na samajhte ho tum, Mujhko kyu??<br>
+    Kya kare? Kya kare? Kya kare??
+  </p>
+
+  <p><strong>Chorus</strong></p>
+  <p>
+    Dur hum, hain khade, kya kare?<br>
+    Fir bhi tumko main, pyaar karu..<br>
+    Kha-mooshi hain, har jagah pe…<br>
+    Tere lafzon ki, aas rakhu…
+  </p>
+
+  <p><strong>Verse 2</strong></p>
+  <p>
+    Dhaagon sa, peychida, hain apna rishta…<br>
+    Na suljhe, sirf uljhe hum….<br>
+    Baatein tum, kar lo na, mujhse kabhi to…<br>
+    Bas tera intezaar karu…
+  </p>
+
+  <p><strong>Pre-Chorus</strong></p>
+  <p>
+    Na samajhte ho tum, Mujhko kyu??<br>
+    Kya kare? Kya kare? Kya kare??
+  </p>
+
+  <p><strong>Chorus</strong></p>
+  <p>
+    Dur hum, hain khade, kya kare?<br>
+    Fir bhi tumko main, pyaar karu..<br>
+    Kha-mooshi hain, har jagah pe…<br>
+    Tere lafzon ki, aas rakhu…
+  </p>
+`;
+
+        
+            // Define the number of lines to show initially
+            const initialLines = 3;
+        
+            // Split the lyrics into lines
+            const lyricsArray = fullLyrics.trim().split("\n");
+        
+            // Select elements
+            const lyricsElement = document.getElementById('lyrics');
+            const toggleButton = document.getElementById('toggle-lyrics');
+        
+            // Initialize state
+            let isExpanded = false;
+        
+            // Function to update the displayed lyrics
+            const updateLyricsDisplay = () => {
+                if (isExpanded) {
+                    lyricsElement.innerHTML = fullLyrics; // Show full lyrics
+                    toggleButton.textContent = "Show Less";
+                } else {
+                    lyricsElement.innerHTML = lyricsArray.slice(0, initialLines).join("\n"); // Show first few lines
+                    toggleButton.textContent = "Show More";
+                }
+            };
+        
+            // Add event listener to toggle button
+            toggleButton.addEventListener('click', () => {
+                isExpanded = !isExpanded; // Toggle state
+                updateLyricsDisplay();
+            });
+        
+            // Initial rendering
+            updateLyricsDisplay();
+        </script>
+        
+        
+        
+
+        
+        <section class="fade-in mt-12">
+            <!-- <h2 class="text-3xl font-semibold text-center text-gray-300">Releases</h2> -->
+            <div class="flex flex-col md:flex-row gap-6 mt-8 md:px-20">
+                <!-- Bio Section (Left - Flexible Height) -->
+                <div class="flex-1 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-white">About Kashmira Chakraborty</h3>
+                    <div class="mt-4 space-y-2">
+                        <p class="text-gray-400">
+                           Sagnify is an independent artist, music composer, and producer known for his soulful compositions and introspective storytelling. His music blends contemporary indie vibes with traditional influences, creating an emotional and immersive listening experience.
+Handling every aspect of his music production from composition to arrangement and mixing, Sagnify works on a zero-budget model, proving that passion and dedication can overcome any limitations. His upcoming single, "Kya Kare," set to release on February 26, 2025, reflects his deep musicality and artistic vision.
+With an unyielding commitment to his craft, Sagnify continues to break boundaries, shaping his own unique sound and leaving a lasting impact on the independent music scene.
+                        </p>
+                        
+                        <!-- Other paragraphs remain the same -->
+                    </div>
+                    <a href="https://soundcloud.com/kashmira-chakraborty" target="_blank" class="text-blue-400 hover:underline mt-4 inline-block">Learn more about Kashmira</a>
+                </div>
+        
+                <!-- Latest Release Section (Right - Fixed Height) -->
+<!--                 <div class="md:w-96">
+                    <div class="h-[500px] w-full flex flex-col bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-6">Latest Release</h3>
+                        <div class="flex-1 overflow-hidden rounded-lg">
+                            <iframe width="100%" height="250" scrolling="no" frameborder="no" allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2005749791&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                            </iframe>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://soundcloud.com/kashmira-chakraborty" target="_blank" class="text-white font-semibold text-lg block truncate">
+                                Kashmira Chakraborty
+                            </a>
+                            <a href="https://soundcloud.com/kashmira-chakraborty/mahakali-tandav-maa-kali-song" target="_blank" class="text-gray-400 text-sm">
+                                महकल तडव Mahakali Tandav Maa Kali Song Jishu Pratip Kashmira Chakraborty
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        
+        
+        
+        
+        
+<!--         <section class="fade-in mt-12">
+            <h2 class="text-3xl font-semibold text-center text-gray-300">Press Photos</h2>
+            <div class="relative mt-8 pb-4 md:px-20"> -->
+                <!-- Left Arrow Button -->
+<!--                 <button onclick="scrollImages(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-black p-4 rounded-full shadow-xl hover:bg-blue-600 focus:outline-none transition-all duration-300 z-10">
+                    &#8592;
+                </button> -->
+        
+                <!-- Image Container -->
+<!--                 <div id="photo-container" class="flex space-x-4 overflow-hidden"> -->
+                    <!-- Image 1 -->
+<!--                     <img src="https://source.boomplaymusic.com/group10/M00/09/10/35732570658a487086be736fa6d80929_464_464.jpg" alt="Photo 1" class="w-60 h-60 object-cover rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this)"> -->
+                    
+                    <!-- Image 2 -->
+<!--                     <img src="https://i.ytimg.com/vi/53lPWsSxAHE/hq720.jpg" alt="Photo 2" class="w-60 h-60 object-cover rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this)"> -->
+                    
+                    <!-- Image 3 -->
+<!--                     <img src="https://i.ibb.co/X3MwJ3Y/Whats-App-Image-2025-01-12-at-12-37-50-daa1a8ab.jpg" alt="Photo 3" class="w-60 h-60 object-cover rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this)"> -->
+                     
+<!-- Image 3 -->
+<!--                     <img src="https://i.ibb.co/sWbq9J7/Whats-App-Image-2025-01-12-at-12-37-51-0323740f.jpg" alt="Photo 4" class="w-60 h-60 object-cover rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this)"> -->
+                     
+<!-- Image 3 -->
+<!--                     <img src="https://i.ibb.co/5FYqJfk/Whats-App-Image-2025-01-12-at-12-42-12-793a9abe.jpg" alt="Photo 5" class="w-60 h-60 object-cover rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this)"> -->
+                     
+<!-- Image 3 -->
+<!--                     <img src="https://i.ibb.co/r4kxR0B/Whats-App-Image-2025-01-12-at-12-42-12-5e94c5d4.jpg" alt="Photo 6" class="w-60 h-60 object-cover rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this)"> -->
+                     
+                
+                    <!-- Add more images as needed -->
+<!--                 </div> -->
+                <!-- Right Arrow Button -->
+<!--                 <button onclick="scrollImages(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-black p-4 rounded-full shadow-xl hover:bg-blue-600 focus:outline-none transition-all duration-300 z-10">
+                    &#8594;
+                </button>
+            </div>
+        </section> -->
+        
+        <!-- Lightbox Modal -->
+<!--         <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 hidden justify-center items-center z-50">
+            <div class="relative w-full h-full flex justify-center items-center">
+                <button class="absolute top-4 right-4 text-white text-3xl font-semibold transform hover:scale-110 transition-all duration-300" onclick="closeLightbox()">×</button>
+                <img id="lightbox-img" src="" alt="Lightbox Image" class="max-w-full max-h-full object-contain rounded-md shadow-lg transform transition-all duration-500">
+            </div>
+        </div> -->
+        
+<!--         <script>
+            // Function to open the lightbox with the clicked image
+            function openLightbox(imgElement) {
+                const lightbox = document.getElementById("lightbox");
+                const lightboxImg = document.getElementById("lightbox-img");
+                lightboxImg.src = imgElement.src;
+                lightbox.classList.remove("hidden");  // Show lightbox
+                setTimeout(() => {
+                    lightboxImg.classList.add("scale-100");
+                }, 10);
+            }
+        
+            // Function to close the lightbox
+            function closeLightbox() {
+                const lightbox = document.getElementById("lightbox");
+                const lightboxImg = document.getElementById("lightbox-img");
+                lightboxImg.classList.remove("scale-100");
+                lightbox.classList.add("hidden");  // Hide lightbox
+            }
+        
+            // Function to scroll images left or right
+            function scrollImages(direction) {
+                const container = document.getElementById('photo-container');
+                const containerWidth = container.offsetWidth;
+                const scrollAmount = containerWidth * 0.8; // Adjust this value for faster/slower scroll
+        
+                container.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        </script> -->
+    </main>
+
+<footer class="bg-gray-800 shadow-lg mt-6 text-white">
+    <div class="container mx-auto py-8 md:py-12 px-4 md:px-6">
+        <!-- Contact Information Section -->
+        <div class="flex flex-col md:flex-row justify-center items-center md:space-x-12 space-y-8 md:space-y-0 mb-8">
+            <div class="text-center w-full md:w-auto">
+                <h3 class="text-xl font-semibold mb-3">Contact</h3>
+                <p>Email: <a href="mailto:sagnify2022@gmail.com" class="text-blue-400 hover:text-blue-300 transition-colors">sagnify2022@gmail.com</a></p>
+            </div>
+            
+            <div class="text-center w-full md:w-auto">
+                <h3 class="text-xl font-semibold mb-3">Social Media</h3>
+                <div class="flex justify-center space-x-4 md:space-x-6">
+                    <a href="https://open.spotify.com/artist/0TqaPuZAdUhBj12cTJjg1M" target="_blank" title="Listen on Spotify" class="transform hover:scale-110 transition-transform">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/spotify.png" alt="Spotify" class="w-7 h-7 md:w-8 md:h-8">
+                    </a>
+                    <a href="https://music.apple.com/us/artist/sagnify/1661673792" target="_blank" title="Listen on Apple Music" class="transform hover:scale-110 transition-transform">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/apple-music.png" alt="Apple Music" class="w-7 h-7 md:w-8 md:h-8">
+                    </a>
+                    <a href="https://soundcloud.com/sagnify22" target="_blank" title="Listen on SoundCloud" class="transform hover:scale-110 transition-transform">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/soundcloud.png" alt="SoundCloud" class="w-7 h-7 md:w-8 md:h-8">
+                    </a>
+                    <a href="https://www.instagram.com/sagnifyofficial" target="_blank" title="Instagram" class="transform hover:scale-110 transition-transform">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" class="w-7 h-7 md:w-8 md:h-8">
+                    </a>
+                    <a href="https://www.youtube.com/@sagnify" target="_blank" title="YouTube" class="transform hover:scale-110 transition-transform">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" class="w-7 h-7 md:w-8 md:h-8">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="text-center text-sm">
+            <p>&copy; 2023 Sagnify. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
